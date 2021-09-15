@@ -1,0 +1,112 @@
+.game {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(files/background.png);
+    background-size: 1000px 400px;
+    animation: scenario 1.72s linear infinite;
+    
+}
+
+.dashboard, #score {
+    font-size: 25px;
+    font-family: monospace;
+    color: black;
+    position: relative;
+    top: -125px;
+}
+
+#player {
+    width: 80px;
+    height: 80px;
+    background-image: url(files/player.png);
+    background-size: 80px 80px;
+    position: relative;
+    top: 310px;
+    left: 50px;   
+}
+
+
+#block1 {
+    width: 40px;
+    height: 50px;
+    background-image: url(files/block1.png);
+    background-size: 40px 50px;
+    position: relative;
+    top: 260px;
+    left: 50px;
+    animation: block1 2s infinite linear;
+}   
+ 
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes scenario {
+    0% {
+        background-position: 1000px;
+    }
+    100% {
+        background-position: 0px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 300px;
+    }
+    
+    10% {
+        top: 280px;
+    }
+
+    20% {
+        top: 260px;
+    }
+
+    30% {
+        top: 240px;
+    }
+
+    40% {
+        top: 220px;
+    }
+
+    50% {
+        top: 200px;
+    }
+
+    60% {
+        top: 220px;
+    }
+
+    70% {
+        top: 240px;
+    }
+
+    80% {
+        top: 260px;
+    }
+
+    90% {
+        top: 280px;
+    }
+
+    100% {
+        top: 300px;
+    }
+}
+
+@keyframes block1 {
+    0% {
+        left: 1080px;
+    }
+
+    100% {
+        left: -80px;
+    } 
+}
