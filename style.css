@@ -12,13 +12,37 @@
     
 }
 
-.dashboard, #score {
+
+span {
+    content: "\2192";
+}
+
+
+text {
     font-size: 25px;
     font-family: monospace;
     color: black;
     position: relative;
     top: -125px;
 }
+
+h2 {
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto; 
+}
+
+p {
+    margin: auto;
+    text-align: left;
+    width: 250px;
+    height: 30px;
+    font-size: 25px;
+    font-family: monospace;
+    border-style: outset;
+}
+
 
 #player {
     width: 80px;
@@ -53,6 +77,16 @@
     100% {
         background-position: 0px;
     }
+}
+
+@keyframes block1 {
+    0% {
+        left: 1080px;
+    }
+
+    100% {
+        left: -80px;
+    } 
 }
 
 @keyframes jump {
@@ -101,12 +135,3 @@
     }
 }
 
-@keyframes block1 {
-    0% {
-        left: 1080px;
-    }
-
-    100% {
-        left: -80px;
-    } 
-}

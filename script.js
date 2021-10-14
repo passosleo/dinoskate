@@ -21,7 +21,7 @@ let isAlive = setInterval(function () {
     
     let playerTop = parseInt(window.getComputedStyle(player).getPropertyValue("top")); //le a posicao top do player para a variavel PlayerTop
 
-    let block1Left = parseInt(window.getComputedStyle(block1).getPropertyValue("left")); //le a posicao left do obstaculo para a variavel trashLeft
+    let block1Left = parseInt(window.getComputedStyle(block1).getPropertyValue("left")); //le a posicao left do obstaculo para a variavel block1Left
 
     if(block1Left < 130 && block1Left > 50 && playerTop >= 250) { //verifica se houve colisao
       alert("GAME OVER");
