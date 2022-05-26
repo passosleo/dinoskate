@@ -1,11 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.frame {
+    display: flex;
+    width: 100vw;
+}
+
+.left {
+    flex: 2;
+    height: 400px;
+    background-color: white;
+    z-index: 1;
+}
+
+.right {
+    flex: 2;
+    height: 400px;
+    background-color: white;
+    z-index: 1;
+}
+
 .game {
-    width: 1000px;
+    flex: 8;
     height: 400px;
     margin: auto;
     text-align: center;
     border: 3px solid black;
-    border-radius: 20px;
-    position: relative;
+    border-radius: 12px;
+    position: static;
     background-image: url(files/background.png);
     background-size: 1000px 400px;
     animation: scenario 1.72s linear infinite;
